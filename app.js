@@ -1,4 +1,4 @@
-const pokemon = require('./data.js')
+onst pokemon = require('./data.js')
 
 const game = {
     party: [],
@@ -18,6 +18,12 @@ const game = {
       { name: "rare candy", quantity: 99 },
     ],
 }
+
+// Exercise 1
+//console.dir(pokemon, { maxArrayLength: null });
+
+// Excercise 2
+//console.log(pokemon);
 
 /*
 Exercise 3
@@ -52,6 +58,7 @@ Solve Exercise 5 here:
 
 
 const threePokemons = pokemon.map(character => character.type === 'electric' || character.hp === 60).slice(0,4);
+game.party.push(...threePokemons);
 
 /*
 Exercise 6
